@@ -47,6 +47,12 @@ public class Recyclerview_Adapter extends RecyclerView.Adapter<Recyclerview_Adap
             t1=itemView.findViewById(R.id.item_name);
             t2=itemView.findViewById(R.id.item_surname);
             t3=itemView.findViewById(R.id.item_number);
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                }
+            });
         }
     }
 }

@@ -1,6 +1,7 @@
 package com.example.recyclerview_contact_database;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         recyclerView=findViewById(R.id.recyclerview);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
         add=findViewById(R.id.add);
 
 
@@ -41,6 +43,8 @@ public class MainActivity extends AppCompatActivity {
         });
         Recyclerview_Adapter adapter=new Recyclerview_Adapter(MainActivity.this,contactslist);
         recyclerView.setAdapter(adapter);
+
+
 
     }
 
