@@ -57,7 +57,8 @@ public class MainActivity extends AppCompatActivity {
              String name=cursor.getString(1);
              String surname=cursor.getString(2);
              String number=cursor.getString(3);
-           Contacts contacts=new Contacts(id,name,surname,number);
+             String imgUri=cursor.getString(4);
+           Contacts contacts=new Contacts(id,name,surname,number,imgUri);
            contactslist.add(contacts);
             Log.d("AAA", "ShowData: Create data"+contacts);
 

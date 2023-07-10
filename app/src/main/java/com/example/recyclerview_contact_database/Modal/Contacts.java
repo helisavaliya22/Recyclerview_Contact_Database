@@ -1,16 +1,21 @@
 package com.example.recyclerview_contact_database.Modal;
 
+import android.net.Uri;
+
 public class Contacts {
     private int id;
     private String name;
     private String surname;
     private String number;
+    private String imgUri;
 
-    public Contacts(int id, String name, String surname, String number) {
+    public Contacts(int id, String name, String surname, String number,String imgUri) {
         this.id = id;
         this.name = name;
         this.surname = surname;
         this.number = number;
+        this.imgUri=imgUri;
+
     }
 
     public int getId() {
@@ -43,5 +48,13 @@ public class Contacts {
 
     public void setNumber(String number) {
         this.number = number;
+    }
+
+    public String getImgUri() {
+        return imgUri;
+    }
+
+    public void setImgUri(String imgUri) {
+        this.imgUri = imgUri;
     }
 }
