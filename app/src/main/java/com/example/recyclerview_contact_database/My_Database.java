@@ -18,8 +18,6 @@ public class My_Database extends SQLiteOpenHelper {
         String query = "create table ContactData(ID integer primary key autoincrement,NAME text,SURNAME text,NUMBER text, IMGURI text)";
         db.execSQL(query);
         Log.d("AAA", "onCreate: Create table");
-
-
     }
 
     @Override

@@ -29,10 +29,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         add=findViewById(R.id.add);
 
-
-
         ShowData();
-
 
         add.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,9 +40,6 @@ public class MainActivity extends AppCompatActivity {
         });
         Recyclerview_Adapter adapter=new Recyclerview_Adapter(MainActivity.this,contactslist);
         recyclerView.setAdapter(adapter);
-
-
-
     }
 
     private void ShowData() {
@@ -64,6 +58,4 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }
-
-
 }
